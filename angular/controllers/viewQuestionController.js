@@ -54,9 +54,9 @@ var main = this;
 
             var apple = "<h1 style='padding-top:4%;'>Thankyou</h1>"
             
-            if(main.questions[$index].questionText === undefined)
+            if(main.questions.length <= ($index+1))
             {
-                alert("done");
+                $('.container').html(apple);
             }
               
             survey.createAnAnswer(this.questionId,answerData)
