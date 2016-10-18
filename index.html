@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="surveyApp">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<head>
+    <title>Survey Application</title>
+</head>
+
+
+
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!--For mobile view, keeping the navbar as a drop down menu which can be toggled on click-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <i class="fa fa-bars fa-color" aria-hidden="true"></i>
+      </button>
+            <a class="navbar-brand" href="#">Survey App</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" ng-href="#/">Home</a></li>
+                <li><a href="#" ng-href="#/create">Create</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div ng-view>
+    </div>
+
+</body>
+
+<script src="https://use.fontawesome.com/c7082764ea.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+
+<script type="text/javascript" src="angular/app.js"></script>
+
+<script type="text/javascript" src="angular/services/services.js"></script>
+
+<script type="text/javascript" src="angular/controllers/mainController.js"></script>
+<script type="text/javascript" src="angular/controllers/createController.js"></script>
+<script type="text/javascript" src="angular/controllers/singleViewController.js"></script>
+<script type="text/javascript" src="angular/controllers/editSurveyController.js"></script>
+<script type="text/javascript" src="angular/controllers/viewQuestionController.js"></script>
+<script type="text/javascript" src="angular/controllers/createQuestionController.js"></script>
+<script type="text/javascript" src="angular/controllers/createOptionController.js"></script>
+<script type="text/javascript" src="angular/controllers/editQuestionController.js"></script>
+
+
+<script type="text/javascript" src="angular/routes.js"></script>
+
+</html>

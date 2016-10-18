@@ -1,0 +1,26 @@
+<h1 style="padding-top: 4%">Hey</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <br/>
+            <h1 style="padding-top: 2%">Create a new Option</h1>
+            <div class="create">
+                <form ng-submit="createOption.createOptions()">
+
+                    <input placeholder="new option" type="text" name="heading" style="width:100%" ng-model="createOption.optionText" required=""><br/><br/>
+
+                    <input type="submit" value="Create Option">
+
+
+
+                </form>
+                <h4><a href="#" ng-href="#/questions/{{questionText.questionId}}/delete" ng-click="createOption.deleteSingleQuestion()">Delete this question</a></h4>
+
+                <h4><a href="#" ng-href="#/questions/{{questionText.questionId}}/options/delete" ng-click="createOption.deleteOptions()">Delete all options</a></h4>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+</div>

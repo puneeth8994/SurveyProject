@@ -1,0 +1,29 @@
+<div class="container">
+ <div class="row">
+            <div class="col-lg-12">
+                <br/>
+                <h1 style="padding-top: 2%">Create a new survey</h1>
+                <div class="create">
+                   <form ng-submit="createSurveys.createSurvey()">
+                       
+                       <input placeholder="title" type="text" name="heading" ng-model="createSurveys.surveyTitle" required=""><br/><br/>
+                       <input placeholder="Sub Heading of Blog" type="text" name="subHeading" ng-model="createSurveys.surveySubtitle" required=""><br/><br/>
+                       <input class="instructions" type="text" ng-model="createSurveys.instructions" required="">
+                            
+                       
+                       <br/><br/>
+                       <input type="submit" value="Create Survey">
+
+
+
+                   </form>
+                </div>
+                <hr>
+                
+              
+             
+                
+                   <h1><a href="#" ng-href="#/">Home</a></h1>
+            </div>
+ </div>
+</div>

@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10" ng-init="singleSurvey.loadSingleSurvey()">
+
+
+
+            <h2 class="singleTitle">{{singleSurvey.survey.surveyTitle}}</h2>
+            <h4>{{singleSurvey.survey.surveySubtitle}}</h4>
+            <h4>{{singleSurvey.survey.instructions}}</h4>
+
+            <h6>{{singleSurvey.survey.surveyId}}</h6>
+
+            <hr/>
+            <br/>
+            <br/>
+
+            <h1><a href="#" ng-href="#/{{singleSurvey.survey.surveyId}}/edit">Edit survey details</a></h1>
+            <h1><a href="#" ng-href="#/{{singleSurvey.survey.surveyId}}/question/create">Add/Edit question</a></h1>
+            <h1><a href="#" ng-href="#/" ng-click="singleSurvey.deleteSingleSurvey()">Delete</a></h1>
+          
+
+        </div>
+    </div>
+</div>

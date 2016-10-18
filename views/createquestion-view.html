@@ -1,0 +1,36 @@
+<div class="container">
+ <div class="row">
+            <div class="col-lg-8">
+                <br/>
+                <h1 style="padding-top: 2%">Create a new question</h1>
+                <div class="create">
+                   <form ng-submit="createQuestion.createSingleQuestion()">
+                       
+                       <input placeholder="new question" type="text" name="heading" style="width:100%" ng-model="createQuestion.questionText" required=""><br/><br/>
+                      
+                       <input type="submit" value="Create Question">
+
+
+
+                   </form>
+                </div>
+                <hr>
+                
+              
+            <div ng-controller="viewQuestionController as viewQuestions">
+              <div ng-repeat="questionText in viewQuestions.questions">
+                <h2>{{questionText.questionText}}</h2>
+                <h4><a href="#" ng-href="#/questions/{{questionText.questionId}}/options/create">Add/Delete options and Questions</a></h4>
+                <h4><a href="#" ng-href="#/questions/{{questionText.questionId}}/edit">Edit Questions</a></h4>
+               </div>
+
+            </div>
+
+
+
+             
+                
+                   <h1><a href="#" ng-href="#/">Home</a></h1>
+            </div>
+ </div>
+</div>

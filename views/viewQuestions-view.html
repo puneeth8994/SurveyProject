@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8"> 
+
+            
+            <h1 style="padding-top: 4%" ng-init="count=0;">{{viewQuestions.questions[count].questionText}}</h1>  
+        <form ng-submit="viewQuestions.createAnswer()">
+            <div ng-repeat="questions in viewQuestions.questions[count].options">    
+             <h3><input type="radio" style="width:auto;" ng-model="viewQuestions.selectedOptionNumber" value="{{$index+1}}">{{$index+1}}. {{questions}}</h3>
+                         
+ 
+                  
+              
+
+            </div>
+            
+            <h3><input style="width:auto;" type="radio" ng-model="viewQuestions.selectedOptionNumber" value="0">Skip Question</h3>
+            &#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="submit" value="submit answer" ng-click="$index=$index+1; count=count+1;">
+            
+             
+            </form>
+        </div>
+    </div>
+</div>

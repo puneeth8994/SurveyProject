@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10" ng-init="singleSurvey.loadSingleSurvey()">
+
+            <h2 style="padding-top: 5%" class="single-view">Hi, Welcome to the survey. <br/>Please click on the start survey button to begin the survey</h2>
+
+
+            <h2 class="singleTitle">{{singleSurvey.survey.surveyTitle}}</h2>
+            <h4>{{singleSurvey.survey.surveySubtitle}}</h4>
+            <h4>{{singleSurvey.survey.instructions}}</h4>
+
+            <hr/>
+            <br/>
+            <br/>
+            
+
+           <h1><a ng-href="#/{{singleSurvey.survey.surveyId}}/questions/all">Start survey</a></h1>
+
+             
+           
+            <h6><a onclick="return confirm('Please enter only if you are an admin. Click cancel if you are not!')" class="btn btn-primary" ng-href="#/admin/{{singleSurvey.survey.surveyId}}">Admin View</a></h6>
+          
+
+        </div>
+    </div>
+</div>

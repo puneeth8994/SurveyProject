@@ -1,0 +1,19 @@
+<div class="container index-view">
+<div class="row">
+<div class="col-md-12" ng-init="allSurveys.loadAllSurveys()">
+
+<h1 class="index-title">List of all Available Surveys</h1><br/>
+<div ng-repeat="survey in allSurveys.surveys">
+
+                        <a ng-href="#/{{survey.surveyId}}" >
+                             <h2 class="title-font">{{$index+1}}. {{survey.surveyTitle}}</h2>
+                            <h4 class="subtitle-font">{{survey.surveySubtitle}}</h4>
+                            </a>
+                   <hr>
+                </div>
+                
+              
+  
+</div>
+</div>
+</div>

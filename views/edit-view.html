@@ -1,0 +1,27 @@
+ <div class="row" ng-init="editSurveys.getCurrentSurvey()">
+            
+            <div class="col-lg-12">
+                <br/>
+                <h1>Edit this Survey</h1>
+                <div class="create">
+                   <form ng-submit="editSurveys.editCurrentSurvey()">
+                       
+                       <input placeholder="Heading of Blog" type="text" name="heading" ng-model="editSurveys.survey.surveyTitle" required=""><br/><br/>
+                       <input placeholder="Sub Heading of Blog" type="text" name="subHeading" ng-model="editSurveys.survey.surveySubtitle" required=""><br/><br/>
+
+                      
+                       <input class="instructions" type="text" ng-model="editSurveys.survey.instructions" required="">
+                       
+                       <br/><br/>
+                       <input type="submit" value="Edit this Survey">
+
+
+
+                   </form>
+                </div>
+                <hr>
+              
+               <h1><a href="#/">Back to Home &rarr;</a></h1>
+            
+            </div>
+</div>

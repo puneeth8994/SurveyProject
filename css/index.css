@@ -1,0 +1,79 @@
+.navbar{
+	font-size: 1.5em; background-color: black; font-family: sans-serif; color: black;
+}
+
+.fa-color{
+	color: #337aa9;
+}
+
+.navbar-brand{
+	font-size:1.2em;
+}
+
+body{
+	background-color : #AABFC4;
+	background-size:cover;
+	color: black;
+}
+
+.title-font{
+	color:black;
+	font-family: 'Times-new-roman';
+	word-break: normal;
+}
+
+.subtitle-font{
+	color:#00008B;
+	word-break: normal;
+}
+
+.container{
+	padding-top: 4%;
+}
+
+.index-title{
+	font-size:3em;
+	color:black;
+	font-family: 'Times-new-roman';
+	word-break: normal;
+}
+
+.single-view{
+	font-size:2em;
+	font-family: sans-serif;
+}
+
+.singleTitle{
+	font-family: 'Times-new-roman'
+}
+
+.create{
+	width:70%;
+}
+
+.instructions{
+	height:150px;
+}
+
+input{
+	width:100%;
+}
+
+@media screen and (max-width: 780px){
+.container{
+ padding-top: 10%;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+	.container{
+ padding-top: 15%;
+    }
+.index-title{
+ font-size:1.6em;
+    }
+    .create{
+	width:100%;
+}
+}
